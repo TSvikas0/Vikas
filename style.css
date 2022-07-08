@@ -1,0 +1,148 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* logo and image  */
+#logo{
+    margin: 4px 12px;
+}
+#logo img{
+    height: 90px;
+    width: 110px;
+    margin: 7px 14px;
+    border-radius: 50%;
+}
+
+
+/* list styling  */
+#navbar{
+    position: absolute;
+    top: 5px;
+}
+#navbar ul{
+    display: flex;
+
+}
+#navbar ul li{
+    margin: 4px;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    background: linear-gradient( rgba(22, 22, 22, 0.5), rgba(0, 0, 0, 0.5) ), url('back.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 79%;
+    width: 100%;
+    z-index: -1;
+    opacity: .88;
+}
+
+#home h1{
+    text-align: center;
+    color: white;
+}
+#home p{
+    color: white;
+    text-align: center;
+}
+
+
+footer{
+    margin-top: 29px;
+    padding: 9px 22px;
+
+}
+
+/* utilities  */
+.h-secondary{
+    font-size: 1.2rem;
+    padding: 12px;
+}
+
+.h-primary{
+    font-size: 4rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.btn{
+    padding: 8px 24px;
+    border: 2px solid whitesmoke;
+    background-color: rgba(42, 190, 240, 0.541);
+    margin: 17px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+.align{
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    margin-top: 75px;
+    border: 4px solid black;
+    
+}
+.cinternal{
+    border: 2px solid blue;
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+
+    
+}
+
+.contact{
+    border: 4px solid green;
+    margin-top: 75px;
+}
+
+
+.bottom{
+    height: 500px;
+}
